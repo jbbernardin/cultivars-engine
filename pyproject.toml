@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "cultivars"
+name = "cultivars-engine"
 dynamic = ["version"]
 description = "Research-grade time series econometrics: ARIMA to state space, VAR to structural identification, Bayesian and spectral methods."
 readme = "README.md"
@@ -50,8 +50,8 @@ polars = ["polars"]
 
 
 [project.urls]
-Repository    = "https://github.com/nikhilxsunder/cultivars/tree/dev"
-Documentation = "https://nikhilxsunder.github.io/cultivars/"
+Repository    = "https://github.com/nikhilxsunder/cultivars-engine/"
+Documentation = "https://nikhilxsunder.github.io/cultivars-engine/"
 
 # ── Composable dependency groups ─────────────────────────────────────────────
 # Each group is independently installable; `dev` composes all of them.
@@ -128,10 +128,10 @@ managed = true
 # ── build ────────────────────────────────────────────────────────────────────
 
 [tool.hatch.version]
-path = "src/cultivars/__about__.py"
+path = "src/cultivars_engine/__about__.py"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/cultivars"]
+packages = ["src/cultivars_engine"]
 
 [tool.hatch.build.targets.sdist]
 exclude = [
@@ -154,7 +154,7 @@ exclude = [
 # ── tool configs ─────────────────────────────────────────────────────────────
 
 [tool.mypy]
-files = "src/cultivars"
+files = "src/cultivars_engine"
 ignore_missing_imports = true
 
 [tool.ruff]

@@ -20,7 +20,7 @@ A clear description of what you expected to happen.
 
 **Environment:**
 
-- cultivars version:
+- cultivars-engine version:
 - Python version:
 - OS:
 
