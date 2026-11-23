@@ -88,8 +88,8 @@ Example:
     ('none', 'restricted_constant', 'constant', 'restricted_trend', 'trend')
 """
 
-from ..engine._core._protocols import Identification
-from ..engine._core._types import (
+from .._core._protocols import Identification
+from .._core._types import (
     Activation,
     CointegrationTrend,
     Frequency,
