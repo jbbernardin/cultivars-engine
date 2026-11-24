@@ -96,24 +96,17 @@ Example:
 from __future__ import annotations
 
 from . import (
-    engine,
+    _core,
+    _internals,
     exceptions,
     summary,
     typing,
 )
 
 __all__ = [
-    "bayes",
-    "data",
-    "diagnostics",
-    "engine",
+    "_core",
+    "_internals",
     "exceptions",
-    "experimental",
-    "forecast",
-    "multivariate",
-    "spectral",
-    "state_space",
     "summary",
     "typing",
-    "univariate",
 ]
